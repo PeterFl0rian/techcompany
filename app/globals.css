@@ -2,20 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+#backgroundGradientGrid {
+    background: rgb(253,29,29);
+    background: -moz-linear-gradient(0deg, rgba(253,29,29,0.30097087378640774) 0%, rgba(252,176,69,0.3) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(253,29,29,0.30097087378640774) 0%, rgba(252,176,69,0.3) 100%);
+    background: linear-gradient(0deg, rgba(253,29,29,0.30097087378640774) 0%, rgba(252,176,69,0.3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fd1d1d",endColorstr="#fcb045",GradientType=1);
 }
